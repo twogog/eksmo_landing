@@ -1,0 +1,41 @@
+*
+  transition-duration: 0.25s
+
+a, button
+  &:hover
+    cursor: default
+
+@media (min-width: 992px)
+  a, button
+    &:hover
+      cursor: pointer
+      color: #f07c29 !important
+
+  .header-search:hover
+    cursor: pointer
+
+  .quiz
+    &-frame:hover, &-input__test:hover
+      cursor: pointer
+      transform: scale(1.05)
+    &-final__restart:hover
+      background-color: darken(#50d66c, 10%)
+      color: #ffffff !important
+  
+  .callback-form__container
+    button:hover
+      background-color: darken(#d83133, 10%)
+      color: #ffffff !important
+
+  .news-mini__container:hover
+    transform: scale(1.05)
+    cursor: pointer
+
+  .follow-mini__container
+    img:hover
+      transform: scale(1.1)
+
+
+  
+  
+  

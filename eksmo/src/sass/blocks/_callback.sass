@@ -1,0 +1,95 @@
+.callback
+  margin-top: 47px
+  background-color: #fff9f7
+  box-shadow: inset 0 7px 10px rgba(0, 0, 0, 0.04)
+  &__title
+    padding-top: 32px
+    margin-bottom: 32px
+    +header-topText
+    color: #000000
+    font-size: 48px
+    font-style: italic
+    // transform: skewX(-10deg)
+  &__text
+    display: inline-block
+    max-width: 600px
+    margin-top: 0
+    margin-bottom: 35px
+    opacity: 0.79
+    color: #282828
+    font-family: 'GillSans Medium', sans-serif
+    font-size: 24px
+  form
+    display: inline-block
+    max-width: 530px
+    width: 100%
+  &-form__container
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    *
+      max-width: 245px
+      width: 100%
+      height: 40px
+    input
+      max-width: 243px
+      height: 38px
+      padding: 0
+      margin: 0
+      text-align: center
+      border: 1px solid #7d7d7d
+      background-color: #ffffff
+      color: #868686
+      font-family: "PT Serif"
+      font-size: 16px
+    button
+      background-color: #d83133
+      color: #ffffff
+      font-family: 'GillSans Medium', sans-serif
+      font-size: 12px
+      border: none
+      text-transform: uppercase
+      letter-spacing: 1.44px
+
+@media (max-width: 680px)
+  .callback
+    &__title
+      max-width: inherit
+      width: 98%
+      margin-bottom: 15px
+      padding-top: 20px
+      font-size: 2rem
+    &__text
+      max-width: inherit
+      width: 98%
+      margin-bottom: 25px
+      font-size: 1.4rem
+    &-form
+      &__container
+        margin-bottom: 30px
+        *
+          line-height: 1.4 !important
+      
+@media (max-width: 576px)
+  .callback
+    &-form
+      &__container
+        max-width: inherit
+        width: 95%
+        margin-left: auto
+        margin-right: auto
+        *
+          max-width: inherit
+          width: 45%
+
+@media (max-width: 400px)
+  .callback
+    &-form
+      &__container
+        *
+          height: 30px !important
+          box-sizing: border-box
+        input
+          font-size: 14px
+        button
+          font-size: 10px

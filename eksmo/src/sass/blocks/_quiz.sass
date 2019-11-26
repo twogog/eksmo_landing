@@ -1,0 +1,281 @@
+.quiz
+  &__title
+    +mainTitles
+    color: #3a3a3a
+  &-flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 40px
+  &-frame
+    display: flex
+    align-items: flex-end
+    flex-direction: flex-start
+    position: relative
+    // overflow: hidden
+    max-width: 320px
+    max-height: 320px
+    width: 100%
+    height: 100vh
+    border: 10px solid $quiz-frame
+  &__image
+    z-index: -5
+    transform: scale(1.05)
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+  &-check
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 22px
+    height: 22px
+    outline: 10px solid $quiz-frame
+    border: 1px solid rgba(76, 76, 76, 0.69)
+    background-color: #eeeeee
+    img
+      display: none
+      width: 18px
+      height: 15px
+
+  &-input
+    &__test
+      display: flex
+      align-items: center
+      max-width: 350px
+      width: 100%
+      height: 75px
+      margin-top: 15px
+      margin-bottom: 15px
+      background-color:#fcfcfc
+      border: 1px solid rgba(131, 131, 131, 0.51)
+    &__check
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 18px
+      margin-left: 22px
+      width: 22px
+      height: 22px
+      border: 1px solid #818181
+      background-color: #f9f9f9
+    &__text
+      +mainTitles
+      font-size: 24px
+      color: #9c9c9c
+    &__image
+      display: none
+      width: 18px
+      height: 15px
+
+  &-final
+    background-color: #f6f6f6
+    &__container
+      background-color: #f6f6f6
+      position: relative
+      overflow: hidden
+      max-height: 510px
+    &__title
+      position: absolute
+      z-index: 5
+      margin: 0
+      top: 50%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -50%)
+      font-family: 'GillSans Medium', sans-serif
+      font-size: 80px
+      font-weight: 400
+      text-shadow: 0 0 16px rgba(0, 0, 0, 0.3)
+      color: #ffd955
+      text-transform: uppercase
+    &__text
+      max-width: 640px
+      display: inline-block
+      margin-top: 30px
+      margin-bottom: 25px
+      +mainText
+      font-size: 18px
+      color: #161616
+    &__info
+      display: block
+      margin-bottom: 23px
+      +mainText
+      font-size: 18px
+      font-weight: 700
+      color: #161616
+    &__restart
+      max-width: 610px
+      width: 100%
+      margin-top: 32px
+      margin-bottom: 28px
+      padding-top: 20px
+      padding-bottom: 26px
+      border: 1px solid #838383
+      background-color: #50d66c
+      +mainTitles
+      color: #ffffff
+      font-size: 24px
+
+  &-socials__final
+    margin-bottom: 0
+
+
+@media (max-width: 1150px)
+  .quiz
+    .inner-container
+      width: 98%
+
+@media (max-width: 768px)
+  .quiz
+    .inner-container
+      width: 96%
+
+    &-input
+      &__test
+        // max-width: 330px
+        max-width: inherit
+        width: 45%
+      &__first, &__third
+        margin-right: 10px
+      &__text
+        font-size: 20px
+@media (max-width: 740px)
+  .quiz
+    &-left__frame
+      margin-right: 10px
+      margin-bottom: 10px
+
+
+@media (max-width: 735px)
+  .quiz
+    &-flex
+      justify-content: center
+      &__input
+        justify-content: space-between
+
+@media (max-width: 720px)
+  .quiz
+    &-left__frame
+      margin-right: 0
+      margin-bottom: 10px
+    &-final
+      &__text
+        max-width: inherit
+        width: 95%
+      &__info
+        max-width: inherit
+        width: 95%
+        margin-left: auto
+        margin-right: auto
+
+    &-flex__input
+      // justify-content: space-between
+    &-input
+      &__test
+        text-align: left
+        // max-width: 300px
+
+@media (max-width: 700px)
+  .quiz
+    &__title
+      margin-top: 24px
+      margin-bottom: 24px
+      font-size: 28px
+    &-final
+      &__restart
+        max-width: inherit
+        width: 85%
+
+@media (max-width: 660px)
+  .quiz
+    &-input
+      &__test
+        // max-width: 270px
+    &-final
+      &__title
+        font-size: 60px
+
+@media (max-width: 600px)
+  .quiz
+    &-input
+      &__test
+        // max-width: 250px
+        height: 60px
+        margin-bottom: 0
+      &__text
+        font-size: 16px
+    
+@media (max-width: 555px)
+  .quiz
+    &-input
+      &__test
+        // max-width: 200px
+      &__check
+        margin-right: 10px
+      &__text
+        font-size: 14px
+    &-final
+      &__title
+        font-size: 50px
+      &__restart
+        font-size: 20px
+        padding-top: 12px
+        padding-bottom: 15px
+
+@media (max-width: 462px)
+  .quiz
+    &__title
+      span
+        display: block
+    &-final
+      &__title
+        font-size: 40px
+
+@media (max-width: 450px)
+  .quiz
+    &__title
+      margin-top: 12px
+      margin-bottom: 12px
+      font-size: 20px
+    &-input
+      &__test
+        // max-width: 170px
+        height: 50px
+      &__check
+        width: 15px
+        height: 15px
+      &__text
+        font-size: 12px
+    
+    &-final
+      &__text
+        margin-top: 15px
+        margin-bottom: 20px
+        font-size: 15px
+@media (max-width: 400px)
+  .quiz
+    &-frame
+      max-width: 270px
+      max-height: 270px
+
+@media (max-width: 386px)
+  .quiz
+    &-input
+      &__test
+        // max-width: 135px
+        height: 40px
+      &__text
+        text-align: left
+      &__check
+        min-width: 15px
+        height: 15px
+        margin-right: 5px
+        margin-left: 10px
+      &__text
+        font-size: 12px
+    &-final
+      &__title
+        font-size: 35px

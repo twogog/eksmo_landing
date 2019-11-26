@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <title>Eksmo</title>
+</head>
+<body>
+  <header class='header'>
+    <div class="header-top">
+      
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <div class="menu__box">
+            <a class="menu__item" href="#">магазин</a>
+            <a class="menu__item" href="#">книги</a>
+            <a class="menu__item" href="#">серии</a>
+            <a class="menu__item" href="#">авторы</a>
+            <a class="menu__item" href="#">новости</a>
+            <a class="menu__item" href="#">новинки</a>
+            <a class="menu__item" href="#">сообщества</a>
+            
+            <div class="hamburger__mini">
+              <a class="menu__item" href="#">Фантастика</a>       
+              <a class="menu__item" href="#">Любовь</a>
+              <a class="menu__item" href="#">Детектив</a>
+              <a class="menu__item" href="#">Классика</a>
+              <a class="menu__item" href="#">Красота</a>
+              <a class="menu__item" href="#">Еда</a>
+              <a class="menu__item" href="#">Семья</a>
+              <a class="menu__item" href="#">Бизнес</a>
+              <a class="menu__item" href="#">Дети</a>
+              <a class="menu__item" href="#">Учеба</a>
+            </div>
+          </div>
+        </div>
+  
+      <div class="container container__top">
+
+            <div class="header-logo">
+              <a href="https://eksmo.ru/" class="header-logo__ref">
+                <svg class="header-logo__sign" viewBox="0 0 29.2 47.7">
+                  <path d="M29.2 21.5c0 8.6-8.3 12-16.1 9.5-5.8-2-2.8-6.7.4-5.7 12.3 4 14-11.1-2.6-19.3-3.2-1.5-3.6-3.3-2.2-6 8.5 3 20.5 11.3 20.5 21.5m-8.8 26.2c1.5-2.7 1.1-4.5-2.1-6-16.6-8.2-14.9-23.2-2.6-19.3 3.2 1 6.2-3.7.4-5.7C8.3 14.2 0 17.6 0 26.2c0 10.3 12 18.5 20.4 21.5"></path>
+                </svg>
+                <svg class="header-logo__logo" viewBox="0 0 113.7 21.7">
+                    <path d="M7.7 0c2.4 0 4.5.5 6.3 1.4 1.8.9 3.3 2.3 4.2 3.9 1 1.7 1.5 3.6 1.5 5.7 0 1.9-.5 3.8-1.6 5.5-1 1.7-2.5 3-4.2 3.9-1.8.9-3.8 1.3-6 1.3-2.9 0-5.6-.7-7.9-2v-3.9c1.5.8 2.8 1.4 4 1.8 1.2.4 2.4.6 3.5.6 2 0 3.8-.5 5.2-1.6 1.4-1 2.3-2.5 2.7-4.2H4.8V9.2h10.6C15 7.5 14.1 6.1 12.6 5c-1.4-1-3.1-1.6-4.9-1.6-1.3.1-2.5.3-3.7.6-1.2.4-2.4.9-3.8 1.7V1.8C2.7.6 5.2 0 7.7 0zm19.9.3v8.5h.2c.9 0 1.6-.2 2.1-.4.5-.3.9-.7 1.3-1.3.4-.6.8-1.3 1.2-2.3C33 3.5 33.5 2.6 34 2c.5-.6 1.1-1 1.8-1.3.7-.3 1.6-.4 2.6-.4.4 0 .7 0 1 .1v3.3c-.8 0-1.4.1-1.8.2-.4.1-.7.4-1 .8-.3.4-.6 1-1.1 2-.8 1.9-1.8 3.1-3.1 3.6 1 .4 1.9 1.1 2.7 2 .8.9 1.7 2.2 2.6 3.9l2.9 5.3h-4.5l-2.6-5c-.6-1.2-1.2-2.1-1.8-2.7-.6-.7-1.1-1.1-1.7-1.4-.6-.3-1.4-.4-2.4-.4v9.6h-4V.3h4zM53.9 0c1.2 0 2.4.1 3.5.4s2.4.7 3.7 1.4v3.8c-1.3-.7-2.5-1.3-3.6-1.6-1.1-.3-2.3-.5-3.5-.5-1.5 0-2.9.3-4.1.9-1.2.6-2.2 1.5-2.8 2.6-.7 1.1-1 2.4-1 3.8s.3 2.7 1 3.8 1.6 2 2.8 2.6c1.2.6 2.6.9 4.1.9 1.2 0 2.3-.2 3.3-.5 1.1-.3 2.4-.9 4-1.8v3.8c-1.4.7-2.6 1.2-3.8 1.5s-2.5.5-4 .5c-2.2 0-4.2-.4-6-1.3-1.8-.9-3.1-2.2-4.1-3.8C42.5 14.9 42 13 42 11c0-2.1.5-4 1.6-5.7 1-1.7 2.5-3 4.3-3.9 1.7-.9 3.7-1.4 6-1.4zM69 .3l6.9 8.3L82.8.3h3.6v21.1h-4.1V6.6h-.1l-6 7.4h-.6l-6.1-7.4h-.1v14.8h-4.1V.3H69zm33-.3c2.2 0 4.2.5 5.9 1.4 1.8.9 3.1 2.2 4.2 3.9 1 1.7 1.6 3.6 1.6 5.6 0 2-.5 3.8-1.5 5.5-1 1.7-2.4 3-4.2 3.9-1.8.9-3.8 1.4-6 1.4s-4.2-.5-6-1.4c-1.8-.9-3.2-2.3-4.2-3.9-1-1.7-1.5-3.5-1.5-5.5 0-1.9.5-3.8 1.5-5.5 1-1.7 2.4-3 4.1-4C97.7.5 99.7 0 102 0zm-7.4 10.9c0 1.4.3 2.7 1 3.8.6 1.1 1.5 2 2.7 2.6 1.1.6 2.4.9 3.9.9 2.2 0 4-.7 5.3-2 1.4-1.4 2.1-3.1 2.1-5.3 0-1.4-.3-2.7-.9-3.8-.6-1.1-1.5-2-2.7-2.6-1.1-.6-2.4-.9-3.9-.9-1.4 0-2.7.3-3.9.9-1.1.6-2 1.5-2.6 2.6-.7 1.1-1 2.3-1 3.8z"></path>
+                </svg>
+              </a>
+            </div>
+
+            <nav class="header-nav">
+              <ul class="header-nav__list">        
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Книги</a></li>
+                <li><a href="#">Серии</a></li>
+                <li><a href="#">Авторы</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">новинки</a></li>
+                <li><a href="#" class='header-nav__last'>сообщества</a></li>
+              </ul>
+            </nav>
+
+            <div class="header-search"><img src="img/navbar/Search_icon.svg" alt="search"></div>
+          </div>
+    </div>
+    
+    <div class="header-bottom">
+      <div class="container container__bottom">
+
+          <div class="header-nav-b">
+            <ul class="header-nav-b__list">
+              <li><a href="#">Фантастика</a></li>          
+              <li><a href="#">Любовь</a></li>
+              <li><a href="#">Детектив</a></li>
+              <li><a href="#">Классика</a></li>
+              <li><a href="#">Красота</a></li>
+              <li><a href="#">Еда</a></li>
+              <li><a href="#">Семья</a></li>
+              <li><a href="#">Бизнес</a></li>
+              <li><a href="#">Дети</a></li>
+              <li><a href="#">Учеба</a></li>
+            </ul>
+          </div>
+
+          <div class="header-login">
+            <a href="#">
+              <img src="img/navbar/bottom/icon.svg" alt="enter">
+              <span>вход</span>
+            </a>
+          </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+
+        <div class="hero-choise">
+          <a href="#">главная</a>
+          <span>/</span>
+          <a href="#">новости</a>
+        </div>
+
+        <div class="inner-container">
+
+          <div class="hero-main__content">
+            <img class="hero__image" src="img/hero/header_pic.jpg" alt="Шлем">
+            <h1 class="hero__title">узнай на какой ты стороне</h1>
+            <span class="hero__data">24 июля 2015, 20:15</span>
+            <p class="hero__text">Сможете отличить настоящие цитаты из романа Эрики Джеймс «Грей» от придуманных?</p>
+            <p class="hero__text">Проверьте себя с помощью нашего теста и узнайте, сколько оттенков серого в вас!</p>
+          </div>
+
+          <div class="hero-socials">
+            <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+            <script src="https://yastatic.net/share2/share.js" async="async"></script>
+            <div class="ya-share2" data-services="facebook,twitter,vkontakte,odnoklassniki,telegram"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="quiz">
+      <div class="inner-container">
+        
+        <div class="quiz-part quiz-part__one">
+          <h2 class="quiz__title">1. укажите робота <span>r2-d2</span></h2>
+          <div class="quiz-flex">
+
+            <div class="quiz-frame quiz-left__frame">
+              <img class="quiz__image" src="img/quiz/left-robot.jpg" alt="r2">
+              <div class="quiz-check quiz-left__check">
+                <img class="quiz-ok quiz-left__ok" src="img/quiz/ok.png" alt="ok">
+              </div>
+            </div>
+
+            <div class="quiz-frame quiz-right__frame">
+              <img class="quiz__image" src="img/quiz/right-robot.jpg" alt="r2">
+              <div class="quiz-check quiz-right__check">
+                <img class="quiz-ok quiz-right__ok" src="img/quiz/ok.png" alt="ok">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="quiz-part quiz-part__two">
+          <h2 class="quiz__title">2. какой шлем носили штурмовики?</h2>
+          <div class="quiz-flex">
+
+            <div class="quiz-frame quiz-left__frame">
+              <img class="quiz__image" src="img/quiz/left-helmet.jpg" alt="r2">
+              <div class="quiz-check quiz-left__check">
+                <img class="quiz-ok quiz-left__ok" src="img/quiz/ok.png" alt="ok">
+              </div>
+            </div>
+
+            <div class="quiz-frame quiz-right__frame">
+              <img class="quiz__image" src="img/quiz/right-helmet.jpg" alt="r2">
+              <div class="quiz-check quiz-right__check">
+                <img class="quiz-ok quiz-right__ok" src="img/quiz/ok.png" alt="ok">
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="quiz-part quiz-part__three">
+            <h2 class="quiz__title">3. кто построил «звезду смерти»?</h2>
+            
+            <img src="img/quiz/cosmos.jpg" alt="cosmos">
+            
+            <div class="quiz-flex quiz-flex__input">
+
+              <div class="quiz-input__test quiz-input__first">
+                <div class="quiz-input__check">
+                  <img class="quiz-input__image" src="img/quiz/ok.png" alt="ok">
+                </div>
+                <span class="quiz-input__text">роботы</span>
+              </div>
+
+              <div class="quiz-input__test">
+                <div class="quiz-input__check">
+                  <img class="quiz-input__image" src="img/quiz/ok.png" alt="ok">
+                </div>
+                <span class="quiz-input__text">вейдер</span>
+              </div>
+
+              <div class="quiz-input__test quiz-input__third">
+                <div class="quiz-input__check">
+                  <img class="quiz-input__image" src="img/quiz/ok.png" alt="ok">
+                </div>
+                <span class="quiz-input__text">бог</span>
+              </div>
+
+              <div class="quiz-input__test">
+                <div class="quiz-input__check">
+                  <img class="quiz-input__image" src="img/quiz/ok.png" alt="ok">
+                </div>
+                <span class="quiz-input__text">какую звезду?</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-part quiz-part__four">
+            <h2 class="quiz__title">4. Основное оружие джедая?</h2>
+            <div class="quiz-flex">
+
+              <div class="quiz-frame quiz-left__frame">
+                <img class="quiz__image" src="img/quiz/stick.jpg" alt="r2">
+                <div class="quiz-check quiz-left__check">
+                  <img class="quiz-ok quiz-left__ok" src="img/quiz/ok.png" alt="ok">
+                </div>
+              </div>
+  
+              <div class="quiz-frame quiz-right__frame">
+                <img class="quiz__image" src="img/quiz/gun.jpg" alt="r2">
+                <div class="quiz-check quiz-right__check">
+                  <img class="quiz-ok quiz-right__ok" src="img/quiz/ok.png" alt="ok">
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+          <div class="quiz-part quiz-part__final">
+            <h2 class="quiz__title">ваш результат:</h2>
+            
+            <div class="quiz-final__container">
+              <img src="img/quiz/assaulter.jpg" alt="cosmos">
+              <h2 class="quiz-final__title">штурмовик</h2>
+            </div>
+
+            <div class="quiz-final">
+              <p class="quiz-final__text">Штурмовики — элитные воины Галактической Империи. Как звёздные разрушители типа «Имперский» и TIE истребители, они являлись 
+                олицетворением абсолютной власти Императора Палпатина. Эти безликие служители Нового порядка силой и жестокостью несли волю Императора в тысячи звёздных систем по всей Галактике.
+              </p>
+              <span class="quiz-final__info">Не забудьте поделиться результатом с друзьями:</span>
+
+              <div class="hero-socials quiz-socials__final">
+                <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                <script src="https://yastatic.net/share2/share.js" async="async"></script>
+                <div class="ya-share2" data-services="facebook,twitter,vkontakte,odnoklassniki,telegram"></div>
+              </div>
+
+              <button class="quiz-final__restart">пройти заново</button>
+
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <section class="callback">
+      <div class="inner-container">
+
+        <h2 class="callback__title">Оставайтесь на связи!</h2>
+        <p class="callback__text">Подпишитесь на рассылку и будьте в курсе последних
+          книжных новинок издательства</p>
+
+        <form action="#" class="callback-form">
+          <div class="callback-form__container">
+            <input type="email" placeholder="Введите ваш e-mail" required>
+            <button>подписаться</button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+
+        <h2 class="news__title">новости по теме</h2>
+
+        <div class="news-flex">
+
+          <div class="news-mini__container">
+            <div class="news-image__container news-image__container-first">
+              <img src="img/news/sheet.svg" alt="sheet">
+            </div>
+
+            <a class="news__away" href="#">Читателям</a>
+            <h3 class="news__subtitle">Лев толстой или брогер простой?</h3>
+            <span class="news__date">24 июля 2015</span>
+            <p class="news__text">Пройдите наш специальный уникальный мегакрутой тест и узнайте, какой вы 
+              писатель</p>
+          </div>
+
+          <div class="news-mini__container">
+            <div class="news-image__container news-image__container-second">
+              <img src="img/news/axe.svg" alt="axe">
+            </div>
+
+            <a class="news__away" href="#">книги</a>
+            <h3 class="news__subtitle">20 вопросов по преступлению и наказанию</h3>
+            <span class="news__date">24 июля 2015</span>
+            <p class="news__text">Писатель фантаст Олег Рой встретился с читателями в магазине «Книжный» и 
+              представил новую книгу.</p>
+          </div>
+
+          <div class="news-mini__container">
+            <div class="news-image__container news-image__container-third">
+              <img src="img/news/map.svg" alt="map">
+            </div>
+
+            <a class="news__away" href="#">Читателям</a>
+            <h3 class="news__subtitle">тест про что-то там еще вобщем пройдите</h3>
+            <span class="news__date">24 июля 2015</span>
+            <p class="news__text">29 июня 1900 года в Лионе родился 
+              известный французский писатель, поэт и профессиональный лётчик.</p>
+          </div>
+
+        </div>
+
+          <a class="all__news" href="#">все новости</a>
+      </div>
+    </section>
+
+    <section class="follow">
+      <div class="container">
+
+        <h2 class="follow__title">присоединяйтесь к нам</h2>
+        
+        <div class="follow-flex">
+
+          <div class="follow-mini__container">
+            <a href="#">
+              <span>
+                <img src="img/follow/vk.png" alt="vk">
+              </span>
+            </a>
+            <span class="follow__text">читают 23 987 человек</span>
+          </div>
+
+          <div class="follow-mini__container">
+            <a href="#">
+              <span>
+                <img src="img/follow/fb.png" alt="facebook">
+              </span>
+            </a>
+            <span class="follow__text">читают 3 765 человек</span>
+          </div>
+
+          <div class="follow-mini__container">
+            <a href="#">
+              <span>
+                <img src="img/follow/twit.png" alt="twitter">
+              </span>
+            </a>
+            <span class="follow__text">читают 3 657 человек</span>
+          </div>
+
+          <div class="follow-mini__container">
+            <a href="#">
+              <span>
+                <img src="img/follow/inst.png" alt="insta">
+              </span>
+            </a>
+            <span class="follow__text">читают 987 человек</span>
+          </div>
+
+          <div class="follow-mini__container">
+            <a href="#">
+              <span class="follow-image__baseline">
+                <img src="img/follow/yout.png" alt="youtube">
+              </span>
+            </a>
+            <span class="follow__text">смотрят 987 человек</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-flex"> 
+          
+        <div class="footer-mini__container footer-mini__container-first">
+          <div class="footer-content footer-content__first">
+            <h3 class="footer-content__title">издательство</h3>
+            <a href="#">Эксмо сегодня</a>
+            <a href="#">История</a>
+            <a href="#">Миссия и ценности</a>
+            <a href="#">Социальные проекты</a>
+            <a href="#">Редакции </a>
+            <a href="#">партнеры</a>
+          </div>
+
+          <div class="footer-content footer-content__second">
+            <h3 class="footer-content__title">Работа в эксмо</h3>
+            <a href="#">вакансии</a>
+            <a href="#">обучение и развитие</a>
+            <a href="#">работа для фрилансеров</a>
+          </div>
+
+          <div class="footer-content footer-content__third">
+            <h4 class="footer-content__subtitle">Лицензия № 46097</h4>
+            <span class="footer-content__address">Издательство «ЭКСМО» 
+              <br>123308, г. Москва, ул. Зорге, д.1. 
+              <a href="tel:+74954116886">Телефон: +7 (495) 411-68-86.</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-mini__container footer-mini__container-second">
+
+          <div class="footer-content footer-content__first">
+            <h3 class="footer-content__title">для сми</h3>
+            <a href="#">прес-релизы</a>
+            <a href="#">контакты</a>
+          </div>
+
+          <div class="footer-content footer-content__second">
+            <h3 class="footer-content__title">партнерам</h3>
+            <a href="#">корпоративным клиентам</a>
+            <a href="#">библиотекам</a>
+            <a href="#">где заказать книги</a>
+          </div>
+
+          <div class="footer-content footer-content__third">
+            <img src="img/footer/azapi.png" alt="azapi">
+          </div>
+        </div>
+
+        <div class="footer-mini__container footer-mini__container-third">
+
+           <div class="footer-content footer-content__first">
+            <h3 class="footer-content__title">читателям</h3>
+            <a href="#">часто задаваемые вопросы</a>
+            <a href="#">как купить книгу</a>
+            <a href="#">как написать рецензию</a>
+            <a href="#">призовой фонд</a>
+            <a href="#">словарь читателя</a>
+            <a href="#">тесты</a>
+          </div>
+
+          <div class="footer-content footer-content__second">
+            <h3 class="footer-content__title">авторам</h3>
+            <a href="#">как издать книгу</a>
+            <a href="#">форум</a>
+          </div>
+
+          <div class="footer-content footer-content__third">
+            <div class="footer-logo">
+              <a href="https://eksmo.ru/" class="header-logo__ref">
+                <svg class="footer-logo__sign" viewBox="0 0 29.2 47.7">
+                  <path d="M29.2 21.5c0 8.6-8.3 12-16.1 9.5-5.8-2-2.8-6.7.4-5.7 12.3 4 14-11.1-2.6-19.3-3.2-1.5-3.6-3.3-2.2-6 8.5 3 20.5 11.3 20.5 21.5m-8.8 26.2c1.5-2.7 1.1-4.5-2.1-6-16.6-8.2-14.9-23.2-2.6-19.3 3.2 1 6.2-3.7.4-5.7C8.3 14.2 0 17.6 0 26.2c0 10.3 12 18.5 20.4 21.5"></path>
+                </svg>
+                <svg class="footer-logo__logo" viewBox="0 0 113.7 21.7">
+                    <path d="M7.7 0c2.4 0 4.5.5 6.3 1.4 1.8.9 3.3 2.3 4.2 3.9 1 1.7 1.5 3.6 1.5 5.7 0 1.9-.5 3.8-1.6 5.5-1 1.7-2.5 3-4.2 3.9-1.8.9-3.8 1.3-6 1.3-2.9 0-5.6-.7-7.9-2v-3.9c1.5.8 2.8 1.4 4 1.8 1.2.4 2.4.6 3.5.6 2 0 3.8-.5 5.2-1.6 1.4-1 2.3-2.5 2.7-4.2H4.8V9.2h10.6C15 7.5 14.1 6.1 12.6 5c-1.4-1-3.1-1.6-4.9-1.6-1.3.1-2.5.3-3.7.6-1.2.4-2.4.9-3.8 1.7V1.8C2.7.6 5.2 0 7.7 0zm19.9.3v8.5h.2c.9 0 1.6-.2 2.1-.4.5-.3.9-.7 1.3-1.3.4-.6.8-1.3 1.2-2.3C33 3.5 33.5 2.6 34 2c.5-.6 1.1-1 1.8-1.3.7-.3 1.6-.4 2.6-.4.4 0 .7 0 1 .1v3.3c-.8 0-1.4.1-1.8.2-.4.1-.7.4-1 .8-.3.4-.6 1-1.1 2-.8 1.9-1.8 3.1-3.1 3.6 1 .4 1.9 1.1 2.7 2 .8.9 1.7 2.2 2.6 3.9l2.9 5.3h-4.5l-2.6-5c-.6-1.2-1.2-2.1-1.8-2.7-.6-.7-1.1-1.1-1.7-1.4-.6-.3-1.4-.4-2.4-.4v9.6h-4V.3h4zM53.9 0c1.2 0 2.4.1 3.5.4s2.4.7 3.7 1.4v3.8c-1.3-.7-2.5-1.3-3.6-1.6-1.1-.3-2.3-.5-3.5-.5-1.5 0-2.9.3-4.1.9-1.2.6-2.2 1.5-2.8 2.6-.7 1.1-1 2.4-1 3.8s.3 2.7 1 3.8 1.6 2 2.8 2.6c1.2.6 2.6.9 4.1.9 1.2 0 2.3-.2 3.3-.5 1.1-.3 2.4-.9 4-1.8v3.8c-1.4.7-2.6 1.2-3.8 1.5s-2.5.5-4 .5c-2.2 0-4.2-.4-6-1.3-1.8-.9-3.1-2.2-4.1-3.8C42.5 14.9 42 13 42 11c0-2.1.5-4 1.6-5.7 1-1.7 2.5-3 4.3-3.9 1.7-.9 3.7-1.4 6-1.4zM69 .3l6.9 8.3L82.8.3h3.6v21.1h-4.1V6.6h-.1l-6 7.4h-.6l-6.1-7.4h-.1v14.8h-4.1V.3H69zm33-.3c2.2 0 4.2.5 5.9 1.4 1.8.9 3.1 2.2 4.2 3.9 1 1.7 1.6 3.6 1.6 5.6 0 2-.5 3.8-1.5 5.5-1 1.7-2.4 3-4.2 3.9-1.8.9-3.8 1.4-6 1.4s-4.2-.5-6-1.4c-1.8-.9-3.2-2.3-4.2-3.9-1-1.7-1.5-3.5-1.5-5.5 0-1.9.5-3.8 1.5-5.5 1-1.7 2.4-3 4.1-4C97.7.5 99.7 0 102 0zm-7.4 10.9c0 1.4.3 2.7 1 3.8.6 1.1 1.5 2 2.7 2.6 1.1.6 2.4.9 3.9.9 2.2 0 4-.7 5.3-2 1.4-1.4 2.1-3.1 2.1-5.3 0-1.4-.3-2.7-.9-3.8-.6-1.1-1.5-2-2.7-2.6-1.1-.6-2.4-.9-3.9-.9-1.4 0-2.7.3-3.9.9-1.1.6-2 1.5-2.6 2.6-.7 1.1-1 2.3-1 3.8z"></path>
+                </svg>
+              </a>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-mini__container footer-mini__container-fourth">
+
+          <div class="footer-content footer-content__form">
+            <h3 class="footer-content__title">Нашли ошибку?</h3>
+            <form action="#" class="footer-form">
+              <input type="email" placeholder="Введите ваш e-mail" required>
+              <textarea placeholder="Пожалуйста напишите нам об ошибке, найденной на сайте."></textarea>
+              <button>отправить</button>
+            </form>
+          </div>
+
+          <div class="footer-content footer-content__third">
+            <h4 class="footer-content__subtitle footer-content__eksmo">© Эксмо, 2015.</h4>
+          </div>
+          <span class="footer-content__address footer-content__address-mobile">Издательство «ЭКСМО» 
+            <br>123308, г. Москва, ул. Зорге, д.1. 
+            <br><a href="tel:+74954116886">Телефон: +7 (495) 411-68-86.</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

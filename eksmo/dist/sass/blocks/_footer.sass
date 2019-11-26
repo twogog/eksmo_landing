@@ -1,0 +1,174 @@
+.footer
+  padding-top: 16px
+  padding-bottom: 65px
+  background-color: #282828
+  *
+    +GS
+    font-weight: normal
+    text-transform: uppercase
+    letter-spacing: 1.44px
+  a
+    display: block
+    font-size: 12px
+    font-weight: bold
+    color: #c0c0c0
+    line-height: 2
+  .container
+    max-width: 1100px
+  &-flex
+    display: flex
+    justify-content: space-between 
+  &-mini__container
+    &-first
+      max-width: 252px
+      width: 100%
+    &-second
+      max-width: 222px
+      width: 100%
+    &-third
+      max-width: 238px
+      width: 100%
+      .footer-content
+        &__third
+          display: flex
+          align-items: center
+
+    &-fourth
+      max-width: 245px
+      width: 100%
+      *
+        max-width: 245px
+        width: 100%
+      .footer-content
+        &__third
+          display: flex
+          align-items: center
+
+  &-content
+    &__first
+      min-height: 195px
+    &__second
+      min-height: 117px
+      margin-bottom: 40px
+    &__third
+      min-height: 85px
+      img
+        max-width: 192px
+        opacity: 0.54
+        
+    &__form
+      min-height: 380px
+
+    &__title
+      color: #ffffff
+      font-size: 24px
+    &__subtitle
+      color: #ffffff
+      font-size: 12px
+      font-weight: bold
+    &__address
+      opacity: 0.52
+      color: #ffffff
+      font-size: 12px
+      font-weight: 400
+      line-height: 2
+      a
+        opacity: 0.52
+        color: #ffffff
+        font-weight: normal
+  
+  &-logo
+    width: 165px
+    height: 47px
+    &__sign
+      width: 30px
+      height: 50px
+      fill: #ffffff
+    &__logo
+      width: 130px
+      height: 27px
+      fill: #ffffff
+      margin-bottom: 10px
+    
+  form
+    margin-top: 30px
+    *
+      box-sizing: border-box
+      background-color: #282828
+      font-family: 'PT Serif', serif
+      border: 1px solid #ffffff
+      color: #ffffff
+      font-size: 16px
+      font-weight: 400
+      letter-spacing: normal
+      text-transform: none
+    input
+      min-height: 40px
+      padding-left: 20px
+      margin-bottom: 20px
+      color: rgba(255, 255, 255, 0.43)
+    textarea
+      min-height: 160px
+      margin-bottom: 21px
+      padding: 17px 43px 0 22px
+      color: rgba(255, 255, 255, 0.43)
+    button
+      height: 40px
+      +GS
+      font-size: 12px
+      font-weight: bold
+      padding: 0
+      opacity: 1
+      text-transform: uppercase
+      letter-spacing: 1.44px
+
+  &-content__eksmo
+    margin: 0
+
+@media (max-width: 992px)
+  .footer
+    padding-bottom: 30px
+    &-flex
+      flex-wrap: wrap
+      justify-content: space-around
+    
+@media (max-width: 525px)
+  .footer
+    &-flex
+      flex-direction: column
+      align-items: center
+      *
+        text-align: center
+    &-content
+      margin-bottom: 10px
+      &__first
+        min-height: auto
+      &__second
+        min-height: auto
+        margin-bottom: 0
+      &__third
+        min-height: auto
+        display: none !important
+      &__fourth
+        min-height: auto
+      &__title
+        display: inline-block
+        margin-top: 15px
+        margin-bottom: 15px        
+        padding-bottom: 10px
+        border-bottom: 2px dashed
+      &__address-mobile       
+        display: block          // это текст с адресом и лицензией
+        a
+          opacity: 1
+    &-form
+      margin-top: 0 !important
+      input, textarea
+        text-align: left
+
+@media (min-width: 525px)
+  .footer
+    &-content
+      &__address-mobile
+        display: none
+  

@@ -1,0 +1,127 @@
+.news
+  padding-bottom: 73px
+  *
+    font-family: 'GillSans Medium', sans-serif
+    font-weight: 700
+    text-transform: uppercase
+  .container
+    max-width: 1098
+    text-align: center
+  &__title
+    +mainTitles
+    color: #000000
+    margin-bottom: 32px
+    font-size: 48px
+    font-weight: 400
+  &-flex
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+  &-mini__container
+    max-width: 339px
+    text-align: center
+  &-image__container
+    display: flex
+    align-items: center
+    justify-content: center
+    // max-width: 339px
+    // width: 100%
+    max-height: 240px
+    height: 100vh
+    margin-bottom: 17px
+    background-color: #fce5d4
+    &-second
+      background-color: #404040
+    &-third
+      background-color: #fcf5f2
+  
+  &__away
+    color: #d83133
+    font-size: 12px
+    letter-spacing: 1.44px
+    +GS
+  &__subtitle
+    max-width: 279px
+    margin-left: auto
+    margin-right: auto
+    +GS
+    margin-top: 16px
+    margin-bottom: 14px
+    color: #1d1d1d
+    font-size: 18px
+  &__date
+    color: #999999
+    font-size: 10px
+    font-weight: 400
+  &__text
+    +mainText
+    color: #000000
+    font-size: 16px
+    font-weight: 400
+    text-transform: none
+
+  .all__news
+    color: #d83133
+    font-size: 18px
+    font-weight: 400
+    +GS
+      
+@media (max-width: 1100px)
+  .news
+    &-mini__container
+      max-width: inherit
+      width: 32%
+    &-image__container
+      height: 22.5vw
+  
+@media (max-width: 800px)
+  .news
+    padding-bottom: 50px
+    &__title
+      font-size: 2.5rem
+    &-image__container
+      margin-bottom: 10px
+    &-mini__container
+      *:not(.news-image__container):not(img)
+        max-width: inherit
+        width: 98%
+    &__subtitle
+      margin-bottom: 8px
+      margin-top: 10px
+    &__text
+      margin-top: 12px
+
+@media (max-width: 700px)
+  .news
+    &__subtitle
+      font-size: 1rem
+
+@media (max-width: 650px)
+  .news
+    &-flex
+      flex-wrap: wrap
+    &-mini__container
+      width: 48%
+    &-image__container
+      height: 34.3vw
+
+@media (max-width: 500px)
+  .news
+    &-flex
+      justify-content: center
+    &-mini__container
+      width: 90%
+    &-image__container
+      height: 64.3vw
+    &__title
+      font-size: 1.8rem
+    &__text
+      margin-bottom: 25px
+
+@media (max-width: 350px)
+  .news
+    &__title
+      max-width: 200px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 20px

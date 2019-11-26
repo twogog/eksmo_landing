@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('../fonts/GillSans/GillSans.eot');
+  src: url('../fonts/GillSans/GillSans.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/GillSans/GillSans.woff2') format('woff2'),
+      url('../fonts/GillSans/GillSans.woff') format('woff'),
+      url('../fonts/GillSans/GillSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'GillSans Medium';
+  src: url('../fonts/GillSans/GillSans-SemiBold/GillSans-SemiBold.eot');
+  src: url('../fonts/GillSans/GillSans-SemiBold/GillSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GillSans/GillSans-SemiBold/GillSans-SemiBold.woff') format('woff'),
+  url('../fonts/GillSans/GillSans-SemiBold/GillSans-SemiBold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin header-topText {
+  font-family: 'GillSans Medium', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+@mixin header-bottomText {
+  font-family: 'GillSans Medium', sans-serif;
+  font-size: 14px;
+  color: #444444;
+}
+
+@mixin mainTitles {
+  font-family: 'Verdana', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3a3a3a;
+}
+
+@mixin mainText {
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  color: #161616;
+}
+
+@mixin GS {
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 700;
+}

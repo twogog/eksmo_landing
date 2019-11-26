@@ -1,0 +1,62 @@
+.hero
+  &-choise 
+    margin-top: 40px
+    margin-bottom: 40px
+    *
+      display: inline-block
+      +GS
+      font-size: 12px
+      text-transform: uppercase
+      color: #9b9b9b
+    a:first-child
+      color: #bf2020
+    span
+      transform: scaleX(1.5)
+    
+  &-socials
+    margin-top: 28px
+    margin-bottom: 55px
+
+  &-main__content
+    *
+      padding: 0
+      margin: 0
+  
+  &__title
+    margin-top: 30px
+    margin-bottom: 30px
+    +mainTitles
+  &__data
+    display: inline-block
+    margin-bottom: 30px
+    +mainTitles
+    font-size: 12px
+    font-weight: 400
+    color: #999999
+  &__text
+    +mainText
+    font-size: 16px
+
+@media (max-width: 700px)
+  .hero
+    &__title
+      margin-top: 24px
+      margin-bottom: 24px
+      font-size: 28px
+    &__data
+      margin-bottom: 20px
+
+@media (max-width: 450px)
+  .hero
+    &__title
+      margin-top: 12px
+      margin-bottom: 12px
+      font-size: 20px
+    &__data
+      margin-bottom: 14px
+    &__text
+      font-size: 14px
+    &-choise
+      margin-top: 20px
+      margin-bottom: 20px
+  
